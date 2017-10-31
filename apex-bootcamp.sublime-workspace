@@ -23,6 +23,26 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "src/classes/Day2GitExample.cls",
+			"settings":
+			{
+				"buffer_size": 242,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// to invoke from dev console: Day3ListsAndLoops.execute();\npublic with sharing class Day3ListsAndLoops {\n\n\tpublic static void execute() {\n\n\t\t// Create string varaible called myName\n\t\tString myName = 'Mark';\n\t\t// Create new emply list called names\n\t\t// This is the preferred way to initialize\n\t\tList<String> names = new List<String>();\n\n\t\t// Create new emply list with default values\n\t\tList<String> students = new List<String>{'Student1', 'Student2'};\n\n\n\t\t// alternate syntax for creating a new array (list) with 20 empty items\n\t\tString[] employees = new String [20];\n\n\t\tnames.add('Mark1');\n\t\tnames.add('Mark2');\n\t\tnames.add('Mark3');\n\t\tnames.add('Mark4');\n\n\t\tSystem.debug('names: ' + names);\n\n\t\tnames.remove(3); // remove item at index 3, which is Austin4\n\n\t\tSystem.debug('names after last element removed: ' + names);\n\n\n\t\t//dynamically remove last element in array\n\t\tnames.remove(names.size() -1);\n\n\t\tSystem.debug(': ' + names);\n\n\n\t\tSet<String> uniqueNames = new Set<String>();\n\n\t\tuniqueNames.add('Marcus');\n\t\tuniqueNames.add('Marcus');\n\t\tuniqueNames.add('Marcus');\n\t\tuniqueNames.add('Marcus');\n\t\tuniqueNames.add('Marcus');\n\t\tuniqueNames.add('Marcus');\n\n\t\t//store the number of items in our set\n\t\tInteger setSize = uniqueNames.size();\n\n\t\tSystem.debug('uniqueNames: ' + uniqueNames);\n\t\tSystem.debug('setSize: ' + setSize);\n\t}\n\n\n\tpublic static void executeLoops() {\n\n\t\t// for loop takes three parameters\n\t\t// indexVariable\n\t\t// condition\n\t\t// counterVariable\n\n\t\tfor(Integer i = 0; i <10; i ++) {\n\t\t\tSystem.debug('i: ' + i);\n\t\t}\n\n\t\tList<String> names = new List<String>();\n\n\t\tnames.add('mark1');\n\t\tnames.add('mark2');\n\t\tnames.add('mark3');\n\t\tnames.add('mark4');\n\n\t\tfor(Integer i = 0; i < names.size(); i++) {\n\t\t\tSystem.debug(names[i]);\n\t\t}\n\n\t\t// Advanced for loop - loop every item in list\n\t\tfor(String name : names) {\n\t\t\tSystem.debug(name);\n\n\t\t}\n\n\t}\n\n\tpublic static void createNewAccount() {\n\n\t\tAccount myAccount = new Account ();\n\t\tmyAccount.Name = 'atg';\n\t\tmyAccount.Type = 'Other';\n\t\tSystem.debug('myAccount before insert\" ' + myAccount); \n\n\t\tinsert myAccount; \n\n\t\tSystem.debug('myAccount after insert\" ' + myAccount); \n\t}\n\n\npublic static void updateAllAccount() {\n\tList<Account> queriedAccounts = [\n\t\tSELECT Id, Name, Type \n\t\tFROM Account \n\t\tWHERE Name = 'atg' \n\t\tLIMIT 50\n\t];\n\tSystem.debug(queriedAccounts);\n\n\tif(queriedAccounts.size() > 0){\n\t\tAccount myAccount = queriedAccounts[0];\n\t\tmyAccount.Name = 'Changed Account Name';\n\t\tupdate myAccount;\n\t}\n\n}\n\n\tpublic static void updateAccountTypeOnEveryAccount() {\n\n\t\tList<Account> queriedAccounts = [\n\t\t\tSELECT Id, Name, Type \n\t\t\tFROM Account \n\t\t];\n\t// Query all accounts\n\t// Printer out all accounts to console\n\t// Loop thru all accounts\n\t// Update Type = 'Other'\n\t// Print out the account to the console\n\t// Update Accounts (DML)\n\n",
+			"file": "src/classes/Day3ListsAndLoops.cls",
+			"file_size": 2793,
+			"file_write_time": 131535361648097445,
+			"settings":
+			{
+				"buffer_size": 2784,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -70,6 +90,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/AndersonMark/Downloads/query-Product2-mark.anderson@atginfo.com.cpqdev1-20171023144521.csv",
 		"/C/Users/AndersonMark/Desktop/Quote Template Formatting/Sig Block",
 		"/C/Users/AndersonMark/Desktop/Quote Template Formatting/Alignment",
 		"/C/Users/AndersonMark/Desktop/Quote Template Formatting/Import Tag",
@@ -119,7 +140,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -147,7 +168,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -175,6 +196,63 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/classes/Day2GitExample.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/classes/Day3ListsAndLoops.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2243,
+								2243
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2400.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"type": "text"
 				}
@@ -187,7 +265,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 51.0
 	},
 	"layout":
 	{
@@ -214,7 +292,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 284.0
+		"height": 122.0
 	},
 	"output.find_results":
 	{
@@ -262,7 +340,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 352.0,
+	"side_bar_width": 259.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
