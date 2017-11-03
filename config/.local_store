@@ -74,5 +74,53 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "LeadTrigger.trigger": {
+        "id": "01q1I000000VxYSQA0",
+        "name": "LeadTrigger",
+        "createdDate": "2017-11-01T23:07:31.000+0000",
+        "createdById": "0051I000000icHhQAI",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000icHhQAI",
+        "lastModifiedDate": "2017-11-01T23:52:13.000+0000",
+        "fullName": "LeadTrigger",
+        "fileName": "unpackaged/triggers/LeadTrigger.trigger",
+        "createdByName": "Mark Anderson",
+        "lastModifiedByName": "Mark Anderson",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
+        "mmState": "clean"
+    },
+    "ContactTrigger.trigger": {
+        "id": "01q1I000000VzlKQAS",
+        "name": "ContactTrigger",
+        "createdDate": "2017-11-02T21:45:31.000+0000",
+        "createdById": "0051I000000icHhQAI",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000icHhQAI",
+        "lastModifiedDate": "2017-11-02T22:07:24.000+0000",
+        "fullName": "ContactTrigger",
+        "fileName": "unpackaged/triggers/ContactTrigger.trigger",
+        "createdByName": "Mark Anderson",
+        "lastModifiedByName": "Mark Anderson",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
+        "mmState": "clean"
+    },
+    "ContactTriggerHelper.cls": {
+        "id": "01p1I000008x2JIQAY",
+        "name": "ContactTriggerHelper",
+        "createdDate": "2017-11-02T21:46:24.000+0000",
+        "createdById": "0051I000000icHhQAI",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000icHhQAI",
+        "lastModifiedDate": "2017-11-02T23:57:53.000+0000",
+        "fullName": "ContactTriggerHelper",
+        "fileName": "unpackaged/classes/ContactTriggerHelper.cls",
+        "createdByName": "Mark Anderson",
+        "lastModifiedByName": "Mark Anderson",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
