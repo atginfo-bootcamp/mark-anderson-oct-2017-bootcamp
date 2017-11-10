@@ -122,5 +122,21 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "ContractTriggerHelperTests.cls": {
+        "id": "01p1I000009uXiYQAU",
+        "name": "ContractTriggerHelperTests",
+        "createdDate": "2017-11-09T22:45:41.000+0000",
+        "createdById": "0051I000000icHhQAI",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000icHhQAI",
+        "lastModifiedDate": "2017-11-10T00:00:57.000+0000",
+        "fullName": "ContractTriggerHelperTests",
+        "fileName": "unpackaged/classes/ContractTriggerHelperTests.cls",
+        "createdByName": "Mark Anderson",
+        "lastModifiedByName": "Mark Anderson",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
