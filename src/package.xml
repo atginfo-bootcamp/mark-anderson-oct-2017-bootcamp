@@ -8,6 +8,7 @@
 		<members>Day5Maps</members>
 		<members>ContactTriggerHelper</members>
 		<members>ContractTriggerHelperTests</members>
+		<members>Person</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
