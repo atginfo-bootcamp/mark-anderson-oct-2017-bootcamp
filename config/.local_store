@@ -138,5 +138,21 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "Person.cls": {
+        "id": "01p1I00000AtshJQAR",
+        "name": "Person",
+        "createdDate": "2017-11-14T23:23:03.000+0000",
+        "createdById": "0051I000000icHhQAI",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000icHhQAI",
+        "lastModifiedDate": "2017-11-15T00:59:35.000+0000",
+        "fullName": "Person",
+        "fileName": "unpackaged/classes/Person.cls",
+        "createdByName": "Mark Anderson",
+        "lastModifiedByName": "Mark Anderson",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
