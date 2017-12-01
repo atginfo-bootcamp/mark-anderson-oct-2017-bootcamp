@@ -12,6 +12,7 @@
 		<members>Business</members>
 		<members>Employee</members>
 		<members>LocationManagement</members>
+		<members>BulkDeleteAccountsController</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -19,6 +20,10 @@
 		<members>ContactTrigger</members>
 		<members>EmployeeTrigger</members>
 		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>BulkDeleteAccounts</members>
+		<name>ApexPage</name>
 	</types>
 	<version>40.0</version>
 </Package>
